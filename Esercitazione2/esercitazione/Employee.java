@@ -27,8 +27,11 @@ public class Employee extends Person {
 	}
 	
 	public void visualize() {
+		System.out.println( "nome = " + getName() + ", Cognome = " + getSurname() + ", codice fiscale = " + getTaxCode() + ", città = "
+				+ getCity() + ", anno di assunzione = " + annoAssunzione + ", Stipendio = " + stipendio);
 	}
 	
+
 	public boolean gainsMore(Employee e) {
 		if (this.getStipendio() > e.getStipendio())
 			return true;
